@@ -50,6 +50,7 @@ function updateChart(location) {
         myChart.data.labels = dataSet.dates;
         myChart.data.datasets[0].data = dataSet.seaLevel;
         myChart.update();
+        document.getElementById('chart-container').style.display = 'block'; // Show the chart container
     }
 }
 
